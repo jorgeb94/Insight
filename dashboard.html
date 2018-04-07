@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Insight | Dashboard</title>
+    <!-- Tell the browser to be responsive to screen width -->
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<!-- Bootstrap 3.3.7 -->
+<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Ionicons -->
+<link rel="stylesheet" href="Ionicons/css/ionicons.min.css">
+<!-- jvectormap -->
+<link rel="stylesheet" href="css/jquery-jvectormap.css">
+<!-- Theme style -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.3/css/AdminLTE.min.css">
+
+<!-- AdminLTE Skins. Choose a skin from the css/skins
+     folder instead of downloading all of them to reduce the load. -->
+<link rel="stylesheet" href="css/_all-skins.min.css">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+<!-- Google Font -->
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  </head>
+  <body class="hold-transition skin-blue sidebar-mini">
+  <div class="wrapper">
+
+    <header class="main-header">
+
+      <!-- Logo -->
+      <a href="index.html" class="logo">
+        <!-- mini logo for sidebar mini 50x50 pixels -->
+        <span class="logo-mini"><img src="assets/appnew.png" width="50" height="50" alt=""></span>
+        <!-- logo for regular state and mobile devices -->
+        <span class="logo-lg">Insight</span>
+      </a>
+
+      <!-- Header Navbar: style can be found in header.less -->
+      <nav class="navbar navbar-static-top">
+        <!-- Sidebar toggle button-->
+        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+          <span class="sr-only">Toggle navigation</span>
+        </a>
+        <!-- Navbar Right Menu -->
+        <div class="navbar-custom-menu">
+          <ul class="nav navbar-nav">
+
+            <!-- Notifications: style can be found in dropdown.less -->
+            <li class="dropdown notifications-menu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="fa fa-bell-o"></i>
+                <span class="label label-warning">5</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="header">You have 5 notifications</li>
+                <li>
+                  <!-- inner menu: contains the actual data -->
+                  <ul class="menu">
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-warning text-yellow"></i>Logged in - 10 minutes ago
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-warning text-yellow"></i>Logged out - 20 minutes ago
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-warning text-yellow"></i>Spent $5 in game money - 30 minutes ago
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-warning text-yellow"></i>Added $10 in game money - 43 minutes ago
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-warning text-yellow"></i> Logged in - 1 hour ago
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="footer"><a href="#">View all</a></li>
+              </ul>
+            </li>
+            <!-- User Account: style can be found in dropdown.less -->
+            <li class="dropdown user user-menu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <img src="assets/mom.jpg" width="160" height="160" class="user-image" alt="User Image">
+                <span class="hidden-xs">Maria</span>
+              </a>
+              <ul class="dropdown-menu">
+                <!-- User image -->
+                <li class="user-header">
+                  <img src="assets/mom.jpg" width="160" height="160" class="img-circle" alt="User Image">
+
+                  <p>
+                    Maria
+                    <small>Member since Nov. 2017</small>
+                  </p>
+                </li>
+                <!-- Menu Footer-->
+                <li class="user-footer">
+                  <div class="pull-right">
+                    <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <!-- Control Sidebar Toggle Button -->
+          </ul>
+        </div>
+
+      </nav>
+    </header>
+    <!-- Left side column. contains the logo and sidebar -->
+    <aside class="main-sidebar">
+      <!-- sidebar: style can be found in sidebar.less -->
+      <section class="sidebar">
+        <!-- Sidebar user panel -->
+        <div class="user-panel">
+          <div class="pull-left image">
+            <img src="assets/mom.jpg" class="img-circle" alt="User Image">
+          </div>
+          <div class="pull-left info">
+            <p>Maria</p>
+            <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+          </div>
+        </div>
+
+        <!-- /.search form -->
+        <!-- sidebar menu: : style can be found in sidebar.less -->
+        <ul class="sidebar-menu" data-widget="tree">
+          <li class="active treeview menu-open">
+            <a href="#">
+              <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+              <span class="pull-right-container">
+              </span>
+            </a>
+          </li>
+          <li class="header">Status</li>
+          <li><a href="#"><i class="fa fa-circle text-red"></i> <span>John</span></a></li>
+          <li><a href="#"><i class="fa fa-circle text-green"></i> <span>Bethany</span></a></li>                      <li>
+          </li>
+          <li class="treeview">
+            <ul class="treeview-menu">
+              <li><a href="pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>
+              <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>
+              <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
+              <li><a href="pages/charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
+            </ul>
+          </li>
+          <li class="treeview">
+
+            <ul class="treeview-menu">
+              <li><a href="pages/UI/general.html"><i class="fa fa-circle-o"></i> General</a></li>
+              <li><a href="pages/UI/icons.html"><i class="fa fa-circle-o"></i> Icons</a></li>
+              <li><a href="pages/UI/buttons.html"><i class="fa fa-circle-o"></i> Buttons</a></li>
+              <li><a href="pages/UI/sliders.html"><i class="fa fa-circle-o"></i> Sliders</a></li>
+              <li><a href="pages/UI/timeline.html"><i class="fa fa-circle-o"></i> Timeline</a></li>
+              <li><a href="pages/UI/modals.html"><i class="fa fa-circle-o"></i> Modals</a></li>
+            </ul>
+          </li>
+          <li class="treeview">
+            <ul class="treeview-menu">
+              <li><a href="pages/forms/general.html"><i class="fa fa-circle-o"></i> General Elements</a></li>
+              <li><a href="pages/forms/advanced.html"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
+              <li><a href="pages/forms/editors.html"><i class="fa fa-circle-o"></i> Editors</a></li>
+            </ul>
+          </li>
+          <li class="treeview">
+            <ul class="treeview-menu">
+              <li><a href="pages/tables/simple.html"><i class="fa fa-circle-o"></i> Simple tables</a></li>
+              <li><a href="pages/tables/data.html"><i class="fa fa-circle-o"></i> Data tables</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-envelope"></i> <span>Mailbox</span>
+              <span class="pull-right-container">
+                <small class="label pull-right bg-yellow">12</small>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-user"></i><span>Sign Out</span>
+            </a>
+          </li>
+          <li class="treeview">
+            <ul class="treeview-menu">
+              <li><a href="pages/examples/invoice.html"><i class="fa fa-circle-o"></i> Invoice</a></li>
+              <li><a href="pages/examples/profile.html"><i class="fa fa-circle-o"></i> Profile</a></li>
+              <li><a href="pages/examples/login.html"><i class="fa fa-circle-o"></i> Login</a></li>
+              <li><a href="pages/examples/register.html"><i class="fa fa-circle-o"></i> Register</a></li>
+              <li><a href="pages/examples/lockscreen.html"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
+              <li><a href="pages/examples/404.html"><i class="fa fa-circle-o"></i> 404 Error</a></li>
+              <li><a href="pages/examples/500.html"><i class="fa fa-circle-o"></i> 500 Error</a></li>
+              <li><a href="pages/examples/blank.html"><i class="fa fa-circle-o"></i> Blank Page</a></li>
+              <li><a href="pages/examples/pace.html"><i class="fa fa-circle-o"></i> Pace Page</a></li>
+            </ul>
+          </li>
+          <li class="treeview">
+            <ul class="treeview-menu">
+              <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
+              <li class="treeview">
+                <a href="#"><i class="fa fa-circle-o"></i> Level One
+                  <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                  </span>
+                </a>
+                <ul class="treeview-menu">
+                  <li><a href="#"><i class="fa fa-circle-o"></i> Level Two</a></li>
+                  <li class="treeview">
+                    <a href="#"><i class="fa fa-circle-o"></i> Level Two
+                      <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                      </span>
+                    </a>
+                    <ul class="treeview-menu">
+                      <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
+                      <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Main content -->
+      <section class="content">
+        <!-- Info boxes -->
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="info-box" id="iphoneBtn">
+              <span class="info-box-icon bg-aqua"><i class="ion ion-iphone"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">iPhone</span>
+                <span class="info-box-number">Online</span>
+                <button class="btn btn-sm btn-info btn-flat pull-left" id="iphoneBtn">view Activity</button>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="info-box">
+              <span class="info-box-icon bg-red"><i class="ion ion-xbox"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">Xbox One</span>
+                <span class="info-box-number">Offline</span>
+                <button class="btn btn-sm btn-info btn-flat pull-left" id="xboxBtn">view Activity</button>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+
+          <!-- fix for small devices only -->
+          <div class="clearfix visible-sm-block"></div>
+
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="info-box">
+              <span class="info-box-icon bg-green"><i class="ion ion-android-laptop"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">Computer</span>
+                <span class="info-box-number">Offline</span>
+                                <button class="btn btn-sm btn-info btn-flat pull-left" id="compBtn">view Activity</button>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="info-box">
+              <span class="info-box-icon bg-yellow"><i class="ion ion-plus-circled"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-number">Add New Device</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="box">
+              <div class="box-header with-border">
+                <h3 class="box-title">Weekly Gaming Report <span id="game-type">iPhone</span></h3>
+
+                <div class="box-tools pull-right">
+                  <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                  </button>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-box-tool dropdown-toggle" data-toggle="dropdown">
+                      <i class="fa fa-wrench"></i></button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                    </ul>
+                  </div>
+                  <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                </div>
+              </div>
+              <!-- /.box-header -->
+              <div class="box-body">
+                <div class="row">
+                  <div class="col-md-8">
+                    <p class="text-center">
+                      <strong>Game Play: March 4, 2018 - March 11, 2018</strong>
+                    </p>
+
+                    <div class="chart" id="chart">
+                      <!-- Sales Chart Canvas -->
+                      <canvas id="iphoneChart"></canvas>
+                    </div>
+                    <!-- /.chart-responsive -->
+                  </div>
+                  <!-- /.col -->
+                  <div class="col-md-4">
+                    <p class="text-center">
+                      <strong>Gamers</strong>
+                    </p>
+
+                    <div class="progress-group">
+                      <span class="progress-text" id="user1">John</span>
+                      <span class="progress-number" id="user1Hours"><b>17</b> Hours / 30 Hours</span>
+
+                      <div class="progress sm" id="progress-bar1">
+                        <div class="progress-bar progress-bar-aqua" style="width: 60%"></div>
+                      </div>
+                    </div>
+                    <!-- /.progress-group -->
+                    <div class="progress-group">
+                      <span class="progress-text" id="user2">Bethany</span>
+                      <span class="progress-number" id="user2Hours"><b>24.6</b> Hours / 25 Hours</span>
+
+                      <div class="progress sm" id="progress-bar2">
+                        <div class="progress-bar progress-bar-red" style="width: 95%"></div>
+                      </div>
+                    </div>
+
+                  <!-- /.col -->
+                </div>
+                <!-- /.row -->
+              </div>
+              <!-- ./box-body -->
+
+            </div>
+            <!-- /.box -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+
+        <!-- Main row -->
+        <div class="row">
+          <!-- Left col -->
+          <div class="col-md-8">
+            <!-- MAP & BOX PANE -->
+
+            <!-- /.box -->
+            <div class="row">
+              <div class="col-md-12">
+                <!-- DIRECT CHAT -->
+                <div class="box box-warning direct-chat direct-chat-warning">
+                  <div class="box-header with-border">
+                    <h3 class="box-title">Recent Interactions</h3>
+
+                    <div class="box-tools pull-right">
+                      <span data-toggle="tooltip" title="3 New Messages" class="badge bg-yellow">3</span>
+                      <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                      </button>
+                      <button type="button" class="btn btn-box-tool" data-toggle="tooltip" title="Contacts"
+                              data-widget="chat-pane-toggle">
+                        <i class="fa fa-comments"></i></button>
+                      <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <!-- /.box-header -->
+                  <div class="box-body">
+                    <!-- Conversations are loaded here -->
+                    <div class="direct-chat-messages">
+                      <!-- Message. Default to the left -->
+                      <div class="direct-chat-msg">
+                        <div class="direct-chat-info clearfix">
+                          <span class="direct-chat-name pull-left">Bethany</span>
+                          <span class="direct-chat-timestamp pull-right">7 March 2:00 pm</span>
+                        </div>
+                        <!-- /.direct-chat-info -->
+                        <img class="direct-chat-img" src="assets/Child.jpg" alt="message user image">
+                        <!-- /.direct-chat-img -->
+                        <div class="direct-chat-text">
+                          Who wants to be on my team?!?!
+                        </div>
+                        <!-- /.direct-chat-text -->
+                      </div>
+                      <!-- /.direct-chat-msg -->
+
+                      <!-- Message to the right -->
+                      <div class="direct-chat-msg right">
+                        <div class="direct-chat-info clearfix">
+                          <span class="direct-chat-name pull-right">Jamie</span>
+                          <span class="direct-chat-timestamp pull-left">7 March 2:01 pm</span>
+                        </div>
+                        <!-- /.direct-chat-info -->
+                        <img class="direct-chat-img" src="assets/Jamie.jpg" alt="message user image">
+                        <!-- /.direct-chat-img -->
+                        <div class="direct-chat-text">
+                          Me!!
+                        </div>
+                        <!-- /.direct-chat-text -->
+                      </div>
+                      <!-- /.direct-chat-msg -->
+
+                      <!-- Message. Default to the left -->
+                      <div class="direct-chat-msg">
+                        <div class="direct-chat-info clearfix">
+                          <span class="direct-chat-name pull-left">Bethany</span>
+                          <span class="direct-chat-timestamp pull-right">7 March 2:03 pm</span>
+                        </div>
+                        <!-- /.direct-chat-info -->
+                        <img class="direct-chat-img" src="assets/Child.jpg" alt="message user image">
+                        <!-- /.direct-chat-img -->
+                        <div class="direct-chat-text">
+                          Esketittttttt! LMAOOO
+                        </div>
+                        <!-- /.direct-chat-text -->
+                      </div>
+                      <!-- /.direct-chat-msg -->
+
+                      <!-- Message to the right -->
+                      <div class="direct-chat-msg right">
+                        <div class="direct-chat-info clearfix">
+                          <span class="direct-chat-name pull-right">Jamie</span>
+                          <span class="direct-chat-timestamp pull-left">7 March 2:04 pm</span>
+                        </div>
+                        <!-- /.direct-chat-info -->
+                        <img class="direct-chat-img" src="assets/Jamie.jpg" alt="message user image">
+                        <!-- /.direct-chat-img -->
+                        <div class="direct-chat-text">
+                          Esketittttt!!!!!
+                        </div>
+                        <!-- /.direct-chat-text -->
+                      </div>
+                      <!-- /.direct-chat-msg -->
+
+                    </div>
+                    <!--/.direct-chat-messages-->
+
+                    <!-- Contacts are loaded here -->
+                    <div class="direct-chat-contacts">
+                      <ul class="contacts-list">
+                        <li>
+                          <a href="#">
+                            <img class="contacts-list-img" src="dist/img/user1-128x128.jpg" alt="User Image">
+
+                            <div class="contacts-list-info">
+                                  <span class="contacts-list-name">
+                                    Count Dracula
+                                    <small class="contacts-list-date pull-right">2/28/2015</small>
+                                  </span>
+                              <span class="contacts-list-msg">How have you been? I was...</span>
+                            </div>
+                            <!-- /.contacts-list-info -->
+                          </a>
+                        </li>
+                        <!-- End Contact Item -->
+                        <li>
+                          <a href="#">
+                            <img class="contacts-list-img" src="dist/img/user7-128x128.jpg" alt="User Image">
+
+                            <div class="contacts-list-info">
+                                  <span class="contacts-list-name">
+                                    Sarah Doe
+                                    <small class="contacts-list-date pull-right">2/23/2015</small>
+                                  </span>
+                              <span class="contacts-list-msg">I will be waiting for...</span>
+                            </div>
+                            <!-- /.contacts-list-info -->
+                          </a>
+                        </li>
+                        <!-- End Contact Item -->
+                        <li>
+                          <a href="#">
+                            <img class="contacts-list-img" src="dist/img/user3-128x128.jpg" alt="User Image">
+
+                            <div class="contacts-list-info">
+                                  <span class="contacts-list-name">
+                                    Nadia Jolie
+                                    <small class="contacts-list-date pull-right">2/20/2015</small>
+                                  </span>
+                              <span class="contacts-list-msg">I'll call you back at...</span>
+                            </div>
+                            <!-- /.contacts-list-info -->
+                          </a>
+                        </li>
+                        <!-- End Contact Item -->
+                        <li>
+                          <a href="#">
+                            <img class="contacts-list-img" src="dist/img/user5-128x128.jpg" alt="User Image">
+
+                            <div class="contacts-list-info">
+                                  <span class="contacts-list-name">
+                                    Nora S. Vans
+                                    <small class="contacts-list-date pull-right">2/10/2015</small>
+                                  </span>
+                              <span class="contacts-list-msg">Where is your new...</span>
+                            </div>
+                            <!-- /.contacts-list-info -->
+                          </a>
+                        </li>
+                        <!-- End Contact Item -->
+                        <li>
+                          <a href="#">
+                            <img class="contacts-list-img" src="dist/img/user6-128x128.jpg" alt="User Image">
+
+                            <div class="contacts-list-info">
+                                  <span class="contacts-list-name">
+                                    John K.
+                                    <small class="contacts-list-date pull-right">1/27/2015</small>
+                                  </span>
+                              <span class="contacts-list-msg">Can I take a look at...</span>
+                            </div>
+                            <!-- /.contacts-list-info -->
+                          </a>
+                        </li>
+                        <!-- End Contact Item -->
+                        <li>
+                          <a href="#">
+                            <img class="contacts-list-img" src="dist/img/user8-128x128.jpg" alt="User Image">
+
+                            <div class="contacts-list-info">
+                                  <span class="contacts-list-name">
+                                    Kenneth M.
+                                    <small class="contacts-list-date pull-right">1/4/2015</small>
+                                  </span>
+                              <span class="contacts-list-msg">Never mind I found...</span>
+                            </div>
+                            <!-- /.contacts-list-info -->
+                          </a>
+                        </li>
+                        <!-- End Contact Item -->
+                      </ul>
+                      <!-- /.contatcts-list -->
+                    </div>
+                    <!-- /.direct-chat-pane -->
+                  </div>
+                  <!-- /.box-footer-->
+                </div>
+                <!--/.direct-chat -->
+              </div>
+              <!-- /.col -->
+
+              <div class="col-md-6">
+              </div>
+              <!-- /.col -->
+            </div>
+            <!-- /.row -->
+
+            <!-- TABLE: LATEST ORDERS -->
+            <div class="box box-info">
+              <div class="box-header with-border">
+                <h3 class="box-title">Latest Transactions</h3>
+
+                <div class="box-tools pull-right">
+                  <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                  </button>
+                  <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                </div>
+              </div>
+              <!-- /.box-header -->
+              <div class="box-body">
+                <div class="table-responsive">
+                  <table class="table no-margin">
+                    <thead>
+                    <tr>
+                      <th>Order ID</th>
+                      <th>Item</th>
+                      <th>Order Type</th>
+                      <th>Amount</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td><a href="pages/examples/invoice.html">OR9842</a></td>
+                      <td>Fortnite</td>
+                      <td>
+                        <div class="sparkbar" data-color="#00a65a" data-height="20">XXXX-XXXX-XXXX-8766</div>
+                      </td>
+                      <td><span class="label label-success">$5.00</span></td>
+                    </tr>
+                    <tr>
+                      <td><a href="pages/examples/invoice.html">OR1848</a></td>
+                      <td>Fortnite</td>
+
+                      <td>
+
+                        <div class="sparkbar" data-color="#00a65a" data-height="20">XXXX-XXXX-XXXX-8766</div>
+                      </td>
+                      <td><span class="label label-success">$2.00</span></td>
+                    </tr>
+                    <tr>
+                      <td><a href="pages/examples/invoice.html">OR7429</a></td>
+                      <td>Overwatch</td>
+                      <td>
+                        <div class="sparkbar" data-color="#00a65a" data-height="20">XXXX-XXXX-XXXX-8766</div>
+                      </td>
+                      <td><span class="label label-success">$1.00</span></td>
+                    </tr>
+                    <tr>
+                      <td><a href="pages/examples/invoice.html">OR7429</a></td>
+                      <td>Minecraft</td>
+                      <td>
+                        <div class="sparkbar" data-color="#00a65a" data-height="20">XXXX-XXXX-XXXX-8766</div>
+                      </td>
+                      <td><span class="label label-success">$6.25</span></td>
+                    </tr>
+                    <tr>
+                      <td><a href="pages/examples/invoice.html">OR1848</a></td>
+                      <td>League of Legends</td>                      <td>
+                        <div class="sparkbar" data-color="#00a65a" data-height="20">XXXX-XXXX-XXXX-8766</div>
+                      </td>
+                      <td><span class="label label-success">$3.00</span></td>
+
+                    </tr>
+
+
+                    </tbody>
+                  </table>
+                </div>
+                <!-- /.table-responsive -->
+              </div>
+              <!-- /.box-body -->
+              <div class="box-footer clearfix">
+                <a href="javascript:void(0)" class="btn btn-sm btn-default btn-flat pull-right">View All Orders</a>
+              </div>
+              <!-- /.box-footer -->
+            </div>
+            <!-- /.box -->
+          </div>
+          <!-- /.col -->
+
+          <div class="col-md-4">
+            <!-- Info Boxes Style 2 -->
+            <div class="info-box bg-yellow">
+              <span class="info-box-icon"><i class="ion ion-cash"></i></span>
+              <div class="info-box-content">
+                <span class="info-box-text"><h3>Spending Report</h3></span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+            <div class="info-box bg-green">
+              <span class="info-box-icon"><i class="ion ion-ios-football"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text"><h4>Bethany</h4></span>
+                <span class="info-box-number">$9.00</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+            <div class="info-box bg-red">
+              <span class="info-box-icon"><i class="ion ion-ios-americanfootball"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text"><h4>John</h4></span>
+                <span class="info-box-number">$8.25</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.box -->
+
+            <!-- Game Center -->
+            <div class="box box-primary">
+              <div class="box-header with-border">
+                <h3 class="box-title">Game Center</h3>
+
+                <div class="box-tools pull-right">
+                  <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                  </button>
+                  <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                </div>
+              </div>
+              <!-- /.box-header -->
+              <div class="box-body">
+                <ul class="products-list product-list-in-box">
+                  <li class="item">
+                    <div class="product-img">
+                      <img src="assets/overwatch.png" width="50px" height="50px" alt="OverWatch">
+                    </div>
+                    <div class="product-info">
+                      <a href="javascript:void(0)" class="product-title">OVERWATCH
+                        <span class="label label-warning pull-right">First-Person Shooter</span></a>
+                      <span class="product-description">
+                            Game Play: 2 Hours
+
+                          </span>
+                    </div>
+                  </li>
+                  <!-- /.item -->
+                  <li class="item">
+                    <div class="product-img">
+                      <img src="assets/FORTNITE.png" alt="fortnite">
+                    </div>
+                    <div class="product-info">
+                      <a href="javascript:void(0)" class="product-title">FORTNITE
+                        <span class="label label-info pull-right">Co-Op Survival</span></a>
+                      <span class="product-description">
+                          Game Play: 1.5 Hours
+                          </span>
+                    </div>
+                  </li>
+                  <!-- /.item -->
+                  <li class="item">
+                    <div class="product-img">
+                      <img src="assets/LEAGUE OF LEGENDS.png" alt="LEAGUE OF LEGENDS">                  </div>
+                    <div class="product-info">
+                      <a href="javascript:void(0)" class="product-title">LEAGUE OF LEGENDS<span
+                          class="label label-danger pull-right">3rd Person Multiplayer</span></a>
+                      <span class="product-description">
+                            Game Play: 3 Hours
+                          </span>
+                    </div>
+                  </li>
+                  <!-- /.item -->
+                  <li class="item">
+                    <div class="product-img">
+                      <img src="assets/MINECRAFT.png" alt="MINECRAFT">
+                    </div>
+                    <div class="product-info">
+                      <a href="javascript:void(0)" class="product-title">MINECRAFT
+                        <span class="label label-success pull-right">Sandbox</span></a>
+                      <span class="product-description">
+                            Game Play: 4 Hours
+                          </span>
+                    </div>
+                  </li>
+                  <!-- /.item -->
+                </ul>
+              </div>
+              <!-- /.box-body -->
+              <div class="box-footer text-center">
+                <a href="javascript:void(0)" class="uppercase">View All Games</a>
+              </div>
+              <!-- /.box-footer -->
+            </div>
+            <!-- /.box -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </section>
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+    <footer class="main-footer">
+      <div class="pull-right hidden-xs">
+        <b>Version</b> 2.4.0
+      </div>
+      <strong>Copyright &copy; 2014-2016 <a href="https://adminlte.io">Almsaeed Studio</a>.</strong> All rights
+      reserved.
+    </footer>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Create the tabs -->
+      <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+        <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+        <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+      </ul>
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <!-- Home tab content -->
+        <div class="tab-pane" id="control-sidebar-home-tab">
+          <h3 class="control-sidebar-heading">Recent Activity</h3>
+          <ul class="control-sidebar-menu">
+            <li>
+              <a href="javascript:void(0)">
+                <i class="menu-icon fa fa-birthday-cake bg-red"></i>
+
+                <div class="menu-info">
+                  <h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
+
+                  <p>Will be 23 on April 24th</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <i class="menu-icon fa fa-user bg-yellow"></i>
+
+                <div class="menu-info">
+                  <h4 class="control-sidebar-subheading">Frodo Updated His Profile</h4>
+
+                  <p>New phone +1(800)555-1234</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <i class="menu-icon fa fa-envelope-o bg-light-blue"></i>
+
+                <div class="menu-info">
+                  <h4 class="control-sidebar-subheading">Nora Joined Mailing List</h4>
+
+                  <p>nora@example.com</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <i class="menu-icon fa fa-file-code-o bg-green"></i>
+
+                <div class="menu-info">
+                  <h4 class="control-sidebar-subheading">Cron Job 254 Executed</h4>
+
+                  <p>Execution time 5 seconds</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <!-- /.control-sidebar-menu -->
+
+          <h3 class="control-sidebar-heading">Tasks Progress</h3>
+          <ul class="control-sidebar-menu">
+            <li>
+              <a href="javascript:void(0)">
+                <h4 class="control-sidebar-subheading">
+                  Custom Template Design
+                  <span class="label label-danger pull-right">70%</span>
+                </h4>
+
+                <div class="progress progress-xxs">
+                  <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <h4 class="control-sidebar-subheading">
+                  Update Resume
+                  <span class="label label-success pull-right">95%</span>
+                </h4>
+
+                <div class="progress progress-xxs">
+                  <div class="progress-bar progress-bar-success" style="width: 95%"></div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <h4 class="control-sidebar-subheading">
+                  Laravel Integration
+                  <span class="label label-warning pull-right">50%</span>
+                </h4>
+
+                <div class="progress progress-xxs">
+                  <div class="progress-bar progress-bar-warning" style="width: 50%"></div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <h4 class="control-sidebar-subheading">
+                  Back End Framework
+                  <span class="label label-primary pull-right">68%</span>
+                </h4>
+
+                <div class="progress progress-xxs">
+                  <div class="progress-bar progress-bar-primary" style="width: 68%"></div>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <!-- /.control-sidebar-menu -->
+
+        </div>
+        <!-- /.tab-pane -->
+
+        <!-- Settings tab content -->
+        <div class="tab-pane" id="control-sidebar-settings-tab">
+          <form method="post">
+            <h3 class="control-sidebar-heading">General Settings</h3>
+
+            <div class="form-group">
+              <label class="control-sidebar-subheading">
+                Report panel usage
+                <input type="checkbox" class="pull-right" checked>
+              </label>
+
+              <p>
+                Some information about this general settings option
+              </p>
+            </div>
+            <!-- /.form-group -->
+
+            <div class="form-group">
+              <label class="control-sidebar-subheading">
+                Allow mail redirect
+                <input type="checkbox" class="pull-right" checked>
+              </label>
+
+              <p>
+                Other sets of options are available
+              </p>
+            </div>
+            <!-- /.form-group -->
+
+            <div class="form-group">
+              <label class="control-sidebar-subheading">
+                Expose author name in posts
+                <input type="checkbox" class="pull-right" checked>
+              </label>
+
+              <p>
+                Allow the user to show his name in blog posts
+              </p>
+            </div>
+            <!-- /.form-group -->
+
+            <h3 class="control-sidebar-heading">Chat Settings</h3>
+
+            <div class="form-group">
+              <label class="control-sidebar-subheading">
+                Show me as online
+                <input type="checkbox" class="pull-right" checked>
+              </label>
+            </div>
+            <!-- /.form-group -->
+
+            <div class="form-group">
+              <label class="control-sidebar-subheading">
+                Turn off notifications
+                <input type="checkbox" class="pull-right">
+              </label>
+            </div>
+            <!-- /.form-group -->
+
+            <div class="form-group">
+              <label class="control-sidebar-subheading">
+                Delete chat history
+                <a href="javascript:void(0)" class="text-red pull-right"><i class="fa fa-trash-o"></i></a>
+              </label>
+            </div>
+            <!-- /.form-group -->
+          </form>
+        </div>
+        <!-- /.tab-pane -->
+      </div>
+    </aside>
+    <!-- /.control-sidebar -->
+    <!-- Add the sidebar's background. This div must be placed
+         immediately after the control sidebar -->
+    <div class="control-sidebar-bg"></div>
+
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- jQuery 3 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+
+  </script>
+  <!-- Bootstrap 3.3.7 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js">
+
+  </script>
+  <!-- FastClick -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js">
+
+  </script>
+  <!-- AdminLTE App -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.3/js/adminlte.min.js">
+
+  </script>
+  <!-- Sparkline -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+  <!-- jvectormap  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jvectormap/2.0.4/jquery-jvectormap.min.js"></script>
+  <!-- SlimScroll -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-slimScroll/1.3.8/jquery.slimscroll.min.js"></script>
+  <!-- ChartJS -->
+  <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+  <script src="dist/js/pages/dashboard2.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="dist/js/demo.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+
+
+</html>
